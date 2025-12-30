@@ -3,10 +3,12 @@ a backup of all the code written for volusions in platform blog pages created by
 
 
 BLOG PAGE:
+
 blog page only had v1, this one required the least amount of functionality to be created for it so I did not go through multiple iterations on it
 
 
 BLOG-LIST-PAGE:
+
 V1 - This was my first approach with a outdated model using parent row elements. I quickly realized this would not be very easy for MX's who are not html experts to work with and reversing the card order for the js functionality of having the last html card entry show up first proved to be more difficult and less feasible with this approach without making it significantly more complicated for the end user.
 
 V2 - This was my second approach with removing the parent row containers and relying more heavily on flexbox to position and wrap the elements into rows. This allowed for the implementation of the javascript function to reverse the css order of the elements to achieve the end goal of having the laste html card added to show up first as the "latest post"
