@@ -1,0 +1,149 @@
+<style>
+    #blog-header {
+        background: #2e3a45;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #blog-title {
+        color: white;
+    }
+
+    .blog-body-container {
+        max-width: 1000px;
+        margin: 30px auto;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    #blog-body {
+        flex: 3;
+        background: #fff;
+        padding: 25px;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    }
+
+    #blog-body h1 {
+        margin-top: 0;
+    }
+
+    #blog-body img {
+        width: 100%;
+        border-radius: 6px;
+        margin: 20px 0;
+    }
+
+    nav.sidebar {
+        flex: 1;
+        background: #fff;
+        padding: 20px;
+        border-radius: 6px;
+        height: fit-content;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.06);
+    }
+
+    nav.sidebar h3 {
+        margin-top: 0;
+    }
+
+    nav.sidebar ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    nav.sidebar ul li {
+        margin: 10px 0;
+    }
+
+    nav.sidebar a {
+        color: #2e3a45;
+        text-decoration: none;
+    }
+
+    nav.sidebar a:hover {
+        text-decoration: underline;
+    }
+
+    #blog-footer {
+        text-align: center;
+        padding: 20px;
+        background: #2e3a45;
+        color: #fff;
+        margin-top: 40px;
+    }
+
+    @media screen and (max-width:991px) {
+        .blog-body-container {
+            flex-direction: column;
+        }
+
+        nav.sidebar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        nav.sidebar ul {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #blog-body {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width:490px) {
+
+        nav.sidebar ul {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+</style>
+<div id="blog-container">
+    <header id="blog-header">
+        <h1 id="blog-title">My Blog</h1>
+    </header>
+    <div class="blog-body-container">
+        <article id="blog-body">
+            <h1>Blog Post Title</h1>
+            <p>
+                <em>Published January 1, 2025 · 5 min read</em>
+            </p>
+            <img src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg" alt="Blog hero image" />
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+                ullamcorper, massa ac commodo vulputate, neque nisl commodo metus,
+                nec consequat turpis lorem in nibh.
+            </p>
+            <p>
+                Proin nec sapien luctus, pharetra leo id, dictum augue. Sed id
+                malesuada orci. Suspendisse fringilla aliquet risus, id porttitor
+                enim dignissim vel.
+            </p>
+            <h2>Subheading</h2>
+            <p>
+                Nulla facilisi. Morbi interdum consequat urna, ut fermentum magna
+                commodo at. Vivamus vel volutpat arcu. Praesent bibendum orci velit.
+            </p>
+        </article>
+        <nav class="sidebar">
+            <h3>Recent Posts</h3>
+            <ul>
+                <li><a href="/article-a/261.htm">Example Post 1</a></li>
+                <li><a href="/article-a/261.htm">Example Post 2</a></li>
+                <li><a href="/article-a/261.htm">Example Post 3</a></li>
+            </ul>
+        </nav>
+    </div>
+    <p id="blog-footer">
+        © 2025 Your Name — All Rights Reserved
+    </p>
+</div>

@@ -1,0 +1,285 @@
+<style>
+    #blog-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blog-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .blog-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        background-color: rgba(10, 10, 10, .85);
+        border-radius: 10px;
+        flex-basis: 28%;
+        margin-bottom: 20px;
+    }
+
+    .blog-card-excerpt {
+        max-width: 100%;
+        width: 80%;
+        text-align: center;
+    }
+
+    .blog-card-link,
+    .blog-publish-date {
+        color: floralwhite;
+    }
+
+    .blog-card-link:hover {
+        color: lightblue;
+    }
+
+    .blog-card-title {
+        font-weight: bold;
+        color: lightblue;
+        margin-top: 0;
+    }
+
+    .blog-card-link {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .blog-publish-date {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    @media screen and (max-width:991px) {
+        .blog-row {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .blog-card {
+            flex-basis: unset;
+            width: 63%;
+        }
+    }
+
+    @media screen and (max-width:620px) {
+        .blog-card {
+            width: 80%;
+        }
+    }
+</style>
+<!-- This is the main blog container -->
+<div id="blog-container">
+    <!-- This is a row containing 1 or more blog cards -->
+    <div class="blog-row">
+        <!-- This is a blog card container element -->
+        <div class="blog-card">
+            <!-- blog card image and img as link -->
+            <a href="/article-a/261.htm">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                1/9/25
+            </p>
+            <!-- blog card text area and also link -->
+            <a href="/article-a/261.htm">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic or a
+                        few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- blog card 2 -->
+        <div class="blog-card">
+            <a href="/article-a/261.htm">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                2/2/25
+            </p>
+            <a href="/article-a/261.htm">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic or a
+                        few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- blog card 3 -->
+        <div class="blog-card">
+            <a href="/article-a/261.htm">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                3/25/25
+            </p>
+            <a href="/article-a/261.htm">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic or a
+                        few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- blog row 2 -->
+    <div class="blog-row">
+        <!-- This is a blog card container element -->
+        <div class="blog-card">
+            <a href="#">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                4/5/25
+            </p>
+            <a href="#">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic or
+                        a few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- blog card 2 -->
+        <div class="blog-card">
+            <a href="#">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                5/20/25
+            </p>
+            <a href="#">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic or
+                        a few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- blog card 3 -->
+        <div class="blog-card">
+            <a href="#">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                6/6/25
+            </p>
+            <a href="#">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic or
+                        a few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- blog row 3 -->
+    <div class="blog-row">
+        <!-- This is a blog card container element -->
+        <div class="blog-card">
+            <a href="#">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                7/9/25
+            </p>
+            <a href="#">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic
+                        or a few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- blog card 2 -->
+        <div class="blog-card">
+            <a href="#">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                8/9/25
+            </p>
+            <a href="#">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic
+                        or a few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+        <!-- blog card 3 -->
+        <div class="blog-card">
+            <a href="#">
+                <img class="blog-card-img" src="/v/vspfiles/assets/images/900px-Image-Placeholder.jpg"
+                    alt="placeholder" />
+            </a>
+            <!--Publish Date-->
+            <p class="blog-publish-date">
+                12/9/25
+            </p>
+            <a href="#">
+                <div class="blog-card-link">
+                    <h4 class="blog-card-title">
+                        Blog Title
+                    </h4>
+                    <p class="blog-card-excerpt">
+                        This is a small area where you could put a small excerpt such as a overview of the topic
+                        or a few of the first lines of content from the blog post...
+                    </p>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
